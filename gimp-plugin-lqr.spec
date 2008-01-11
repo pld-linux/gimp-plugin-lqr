@@ -1,4 +1,5 @@
 Summary:	Liquid Rescale GIMP Plug-In
+Summary(pl.UTF-8):	Wtyczka Liquid Rescale (ciekłego skalowania) dla GIMP-a
 Name:		gimp-plugin-lqr
 Version:	0.2.1
 Release:	2
@@ -6,8 +7,8 @@ License:	GPL v2+
 Group:		X11/Applications/Graphics
 Source0:	http://liquidrescale.wikidot.com/local--files/en:download-page/gimp-lqr-plugin-%{version}.tar.gz
 # Source0-md5:	574ed430b552a34bc832a4760d35965c
-URL:		http://liquidrescale.wikidot.com/
 Patch0:		%{name}-locale_names.patch
+URL:		http://liquidrescale.wikidot.com/
 BuildRequires:	gettext-devel
 BuildRequires:	gimp-devel >= 1:2.3.0
 BuildRequires:	gtk+2-devel >= 2:2.12.0
@@ -22,6 +23,12 @@ This plugin aims at resizing pictures non uniformly while preserving
 their features, i.e. avoiding distortion of the important parts. It
 supports manual feature selection, and can also be used to remove
 portions of the picture in a consistent way.
+
+%description -l pl.UTF-8
+Ta wtyczka jest przeznaczona do niejednostajnego skalowania obrazów z
+zachowaniem ich cech, tzn. unikając zniekształcania ważnych elementów.
+Obsługuje ręczny wybór cech i może być używana do usuwania części
+obrazu w sposób spójny.
 
 %prep
 %setup -q -n gimp-lqr-plugin-%{version}
