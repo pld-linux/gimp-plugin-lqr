@@ -1,0 +1,11 @@
+--- gimp-lqr-plugin-0.2.1/configure~	2007-10-04 16:48:14.000000000 +0200
++++ gimp-lqr-plugin-0.2.1/configure	2008-01-11 01:18:19.818304944 +0100
+@@ -5885,7 +5885,7 @@
+ _ACEOF
+ 
+ 
+-ALL_LINGUAS="it fr ru pt_BR de zh_CN eu_ES es_AR hu ro_RO sr es_ES"
++ALL_LINGUAS="it fr ru pt_BR de zh_CN eu es_AR hu ro sr es"
+ 
+ 
+ case "$am__api_version" in
