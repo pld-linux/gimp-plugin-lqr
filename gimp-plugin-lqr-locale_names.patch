@@ -4,8 +4,8 @@
  _ACEOF
  
  
--ALL_LINGUAS="it fr ru pt_BR de zh_CN eu_ES es_AR hu ro_RO sr es_ES"
-+ALL_LINGUAS="it fr ru pt_BR de zh_CN eu es_AR hu ro sr es"
+-ALL_LINGUAS="it fr ru pt_BR de eu_ES zh_CN es_AR hu ro_RO sr es_ES nb_NO zh_TW"
++ALL_LINGUAS="it fr ru pt_BR de eu zh_CN es_AR hu ro sr es nb zh_TW"
  
  
  case "$am__api_version" in
