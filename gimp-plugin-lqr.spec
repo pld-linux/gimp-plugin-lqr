@@ -2,7 +2,7 @@ Summary:	Liquid Rescale GIMP Plug-In
 Summary(pl.UTF-8):	Wtyczka Liquid Rescale (ciekłego skalowania) dla GIMP-a
 Name:		gimp-plugin-lqr
 Version:	0.5.0
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Graphics
 Source0:	http://liquidrescale.wikidot.com/local--files/en:download-page/gimp-lqr-plugin-%{version}.tar.bz2
@@ -13,7 +13,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	gimp-devel >= 1:2.3.0
 BuildRequires:	gtk+2-devel >= 2:2.12.0
 BuildRequires:	intltool
-BuildRequires:	liblqr-devel
+BuildRequires:	liblqr-devel >= 0.2.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.198
 Requires:	gimp >= 1:2.2.0
@@ -36,6 +36,7 @@ obrazu w sposób spójny.
 %patch0 -p1
 mv -f po/{eu_ES,eu}.po
 mv -f po/{es_ES,es}.po
+mv -f po/{nb_NO,nb}.po
 mv -f po/{ro_RO,ro}.po
 
 %build
@@ -48,13 +49,14 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang gimp22-lqr-plugin
+%find_lang gimp20-lqr-plugin
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f gimp22-lqr-plugin.lang
+%files -f gimp20-lqr-plugin.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog BUGS README TODO
 %attr(755,root,root) %(gimptool --gimpplugindir)/plug-ins/gimp-lqr-plugin
+%attr(755,root,root) %(gimptool --gimpplugindir)/plug-ins/plug_in_lqr_iter
 %{_datadir}/gimp-lqr-plugin
