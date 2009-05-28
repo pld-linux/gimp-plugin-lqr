@@ -1,12 +1,12 @@
 Summary:	Liquid Rescale GIMP Plug-In
 Summary(pl.UTF-8):	Wtyczka Liquid Rescale (ciekłego skalowania) dla GIMP-a
 Name:		gimp-plugin-lqr
-Version:	0.5.0
+Version:	0.6.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Graphics
 Source0:	http://liquidrescale.wikidot.com/local--files/en:download-page/gimp-lqr-plugin-%{version}.tar.bz2
-# Source0-md5:	a627d56c6622a3e3bb4a2ce41d7002dd
+# Source0-md5:	f5f15814904d7c812eca60cbb2fc6385
 Patch0:		%{name}-locale_names.patch
 URL:		http://liquidrescale.wikidot.com/
 BuildRequires:	gettext-devel
