@@ -1,16 +1,16 @@
 Summary:	Liquid Rescale GIMP Plug-In
 Summary(pl.UTF-8):	Wtyczka Liquid Rescale (ciekłego skalowania) dla GIMP-a
 Name:		gimp-plugin-lqr
-Version:	0.6.1
+Version:	0.7.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Graphics
-Source0:	http://liquidrescale.wikidot.com/local--files/en:download-page/gimp-lqr-plugin-%{version}.tar.bz2
-# Source0-md5:	f5f15814904d7c812eca60cbb2fc6385
+Source0:	http://liquidrescale.wikidot.com/local--files/en:download-page-sources/gimp-lqr-plugin-%{version}.tar.bz2
+# Source0-md5:	af7eb1a0d480bacfa6e5eff9b06bd877
 Patch0:		%{name}-locale_names.patch
 URL:		http://liquidrescale.wikidot.com/
 BuildRequires:	gettext-devel
-BuildRequires:	gimp-devel >= 1:2.3.0
+BuildRequires:	gimp-devel >= 1:2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.12.0
 BuildRequires:	intltool
 BuildRequires:	liblqr-devel >= 0.2.0
@@ -60,3 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %(gimptool --gimpplugindir)/plug-ins/gimp-lqr-plugin
 %attr(755,root,root) %(gimptool --gimpplugindir)/plug-ins/plug_in_lqr_iter
 %{_datadir}/gimp-lqr-plugin
+%(gimptool --gimpdatadir)/scripts/batch-gimp-lqr.scm
